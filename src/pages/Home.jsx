@@ -15,7 +15,7 @@ export const Home = () => {
 
                 <div className="home-buttons">
                     <a href="/projects" className="btn-primary">Ver proyectos</a>
-                    <a href="/contact" className="btn-secondary">Contacto</a>
+                    <a href="/about" className="btn-secondary">Contacto</a>
                 </div>
             </div>
         </div>
