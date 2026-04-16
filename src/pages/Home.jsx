@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 export const Home = () => {
+
+    const navegar = useNavigate();
+
     return (
         <div className="container fade-in home">
             <div className="home-content">
@@ -14,8 +19,8 @@ export const Home = () => {
                 </p>
 
                 <div className="home-buttons">
-                    <a href="/projects" className="btn-primary">Ver proyectos</a>
-                    <a href="/about" className="btn-secondary">Contacto</a>
+                    <button className="btn-primary" onClick={() => navegar("/projects")}>Ver proyecto</button>
+                    <button className="btn-secondary" onClick={() => navegar("/about")}>Contacto</button>
                 </div>
             </div>
         </div>
